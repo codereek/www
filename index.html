@@ -28,7 +28,7 @@
                 <div class="col-md-12">     
                     <div class="main-menu">     
                         <nav class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="./index.html">
                                 <img src="images/logo-2.png" class="d-inline-block align-top" alt="Image">                     
                             </a>
                             <a class="navbar-brand white-logo" href="#">
@@ -250,12 +250,17 @@
                                             <div class="single-link">
                                                 <h3>Our Newsletter</h3>    
                                                 <div class="footer-subscriber">
-                                                <div class="input-group">
-                                                  <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Recipient's username">
-                                                  <div class="input-group-append">
-                                                    <button class="btn btn-subscriber" type="button"> <i class="fa fa-paper-plane-o"></i> </button>
-                                                  </div>
-                                                </div>
+                                                <form id="mc-form">
+
+													<div class="input-group">
+													  <input type="text" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Enter Your Email" aria-label="Recipient's username">
+														<div class="input-group-append">
+															<button class="btn btn-subscriber" type="submit"> <i class="fa fa-paper-plane-o"></i> </button>
+														</div>
+													</div>
+													<span id="mc-result"></span>
+
+												</form>
                                             </div>
                                         </div>
 										
@@ -295,6 +300,28 @@
     <script src="js/plugins.js"></script>
 	<!-- Custom script -->
     <script src="js/custom.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js" integrity="sha256-LcyfaRZnHuDuTF98e28TxRkYm2XTcaOTCcDZW3kFDCg=" crossorigin="anonymous"></script>
+	
+	
+	<script type="text/javascript">
+	
+		$('#mc-form').ajaxChimp({
+			url: 'https://codereek.us20.list-manage.com/subscribe/post?u=9bc310c2aa4ee10ff906d6497&amp;id=0c2d541cd5',
+			callback: callbackFunction
+		});
+		
+		function callbackFunction (resp) {
+			if (resp.result === 'success') {
+				$('#mc-result').html('<p class="text-success">You have successfully subscribed. </p>');
+			}
+			else
+			{
+				$('#mc-result').html('<p class="text-warning">Your subscription is failed.</p>');
+			}
+		}
+		
+	</script>
 	
 	<!-- Smartsupp Live Chat script -->
 	<script type="text/javascript">
