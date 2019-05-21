@@ -1260,7 +1260,7 @@ a.btn-circle:hover {
 	margin-top: -30px;
 }
 .navbar-light .navbar-brand img {
-	max-width: 110px;
+	max-width: 250px;
 	object-fit: cover;
 }
 .btco-hover-menu {
@@ -2155,7 +2155,7 @@ ul.main-menu-nav li.dropdown a i {
 	box-shadow: none;
 }
 .footer-section-1x .footer-top .footer-top-right img {
-	max-width: 123px;
+	max-width: 250px;
 	object-fit: cover;
 }
 .footer-section-1x .footer-top .footer-top-right p {
