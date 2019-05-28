@@ -4,7 +4,7 @@
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto main-menu-nav">
-        {% for item in site.menus.header %}
+        {% for item in site.data.menus.header %}
         <li class="nav-item menu-item-{{ loop.index }}">
             <a href="{{ item.url }}" title="Go to {{ item.title }}" class="nav-link">{{ item.title }}</a>
         </li>

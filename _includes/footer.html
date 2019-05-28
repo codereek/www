@@ -30,7 +30,7 @@
                                         <div class="single-link">
                                             <h3>Company</h3>    
                                             <ul>
-                                                {% for item in site.menus.company %}
+                                                {% for item in site.data.menus.company %}
                                                 <li>
                                                     <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
                                                 </li>
@@ -74,7 +74,7 @@
                         </div>
                         <div class="col-md-7">
                             <ul>
-                                {% for item in site.menus.footer %}
+                                {% for item in site.data.menus.footer %}
                                 <li>
                                     <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
                                 </li>

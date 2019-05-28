@@ -1,4 +1,3 @@
----
 header:
   - url: /
     title: Home
@@ -46,4 +45,3 @@ company:
     title: Contact Us
     identifier: contact-us
     weight: 4
----

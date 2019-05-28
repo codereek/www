@@ -32,7 +32,6 @@ sass:
 # Gems
 plugins:
   - jekyll-feed
-  - jekyll-menus
 
 # Exclude
 exclude:
