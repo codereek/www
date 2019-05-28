@@ -1,0 +1,49 @@
+---
+header:
+  - url: /
+    title: Home
+    identifier: home
+    weight: 1
+  - url: /about-us
+    title: About Us
+    identifier: about-us
+    weight: 2
+  - url: /sign-up
+    title: Sign Up
+    identifier: sign-up
+    weight: 3
+  - url: /sign-in
+    title: Sign In
+    identifier: sign-in
+    weight: 4
+footer:
+  - url: /privacy-policy
+    title: Privacy Policy
+    identifier: privacy-policy
+    weight: 1
+  - url: /terms
+    title: Terms
+    identifier: terms
+    weight: 2
+  - url: http://www.sentry.io
+    title: Powered By Sentry.io
+    identifier: sentry
+    weight: 3
+company:
+  - url: /about-us
+    title: About Us
+    identifier: about-us
+    weight: 1
+  - url: /privacy-policy
+    title: Privacy Policy
+    identifier: privacy-policy
+    weight: 2
+  - url: /terms
+    title: Terms
+    identifier: terms
+    weight: 3
+  - url: /contact-us
+    title: Contact Us
+    identifier: contact-us
+    weight: 4
+---

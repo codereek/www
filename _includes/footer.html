@@ -1,0 +1,91 @@
+<footer class="footer-section-1x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-top-right">                                                      
+                               <img src="{{ site.logo.color }}">
+                                <p>{{ site.description }}</p>
+                               <ul>
+                                    <li>{{ site.email }}</li>                                                                                     
+                                </ul>
+
+                                <div class="footer-social-link">
+                                    <ul>
+                                        <li><a href="{{ site.social.facebook.url }}"> <i class="fa fa-facebook"></i> </a></li>    
+                                        <li><a href="{{ site.social.instagram.url }}"> <i class="fa fa-instagram"></i> </a></li>     
+                                        <li><a href="{{ site.social.twitter.url }}"> <i class="fa fa-twitter"></i> </a></li>
+                                    </ul>                   
+                                </div>
+
+                            </div>  
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="footer-top-left">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="single-link">
+                                            <h3>Company</h3>    
+                                            <ul>
+                                                {% for item in site.menus.company %}
+                                                <li>
+                                                    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+                                                </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>  
+                                    </div>
+                                    
+                                    <div class="col-md-8">
+                                        <div class="single-link">
+                                            <h3>Our Newsletter</h3>    
+                                            <div class="footer-subscriber">
+                                            <form id="mc-form">
+
+												<div class="input-group">
+												  <input type="text" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Enter Your Email" aria-label="Recipient's username">
+													<div class="input-group-append">
+														<button class="btn btn-subscriber" type="submit"> <i class="fa fa-paper-plane-o"></i> </button>
+													</div>
+												</div>
+												<span id="mc-result"></span>
+
+											</form>
+                                        </div>
+                                    </div>
+									
+
+                                </div>
+                            </div>  
+                        </div>
+
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-md-12">
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <p>© <a href="./">CodeReek</a> All Rights Reserved </p>
+                        </div>
+                        <div class="col-md-7">
+                            <ul>
+                                {% for item in site.menus.footer %}
+                                <li>
+                                    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>  
+                    
+                </div>  
+            </div>
+
+        </div>
+    </div>
+</footer>

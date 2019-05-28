@@ -1,0 +1,43 @@
+title: CodeReek.com
+email: info@codereek.com
+description: You can set up CodeReek in minutes with just a few lines of code and start to provide answers about your software quality
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+logo: 
+  white: /assets/images/logo.png
+  color: /assets/images/logo-2.png
+
+social: 
+  facebook:
+    url: https://www.facebook.com/CodeReek/
+  twitter:
+    url: https://www.twitter.com/CodeReek/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Istanbul
+markdown: kramdown
+highlighter: rouge
+
+# Kramdown
+kramdown:
+  input: GFM
+  smart_quotes: apos,apos,quot,quot
+  typographic_symbols: {hellip: ...}
+
+# Sass
+sass:
+  style: expanded
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-menus
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

@@ -1,0 +1,33 @@
+<div class="main-menu-1x main-menu-6x">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-menu">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="{{ site.standart-logo }}" class="d-inline-block align-top" alt="Image">
+                        </a>
+                        <a class="navbar-brand white-logo" href="#">
+                            <img src="{{ site.white-logo }}" class="d-inline-block align-top" alt="Image">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav ml-auto main-menu-nav">
+                                {% for item in site.menus.header %}
+                                <li class="nav-item menu-item-{{ loop.index }}">
+                                    <a href="{{ item.url }}" title="Go to {{ item.title }}" class="nav-link">{{ item.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                           
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
