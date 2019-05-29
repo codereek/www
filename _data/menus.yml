@@ -7,14 +7,18 @@ header:
     title: About Us
     identifier: about-us
     weight: 2
+  - url: /pricing
+    title: Pricing
+    identifier: pricing
+    weight: 3
   - url: /sign-up
     title: Sign Up
     identifier: sign-up
-    weight: 3
+    weight: 4
   - url: /sign-in
     title: Sign In
     identifier: sign-in
-    weight: 4
+    weight: 5
 footer:
   - url: /privacy-policy
     title: Privacy Policy
